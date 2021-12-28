@@ -7,7 +7,8 @@ import Offers from './pages/Offers';
 import ForgotPassword from './pages/ForgotPassword'; 
 import Explore from './pages/Explore';
 import NavBar from './components/NavBar';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
         <NavBar/>
         {/* Navbar */}
       </Router>
+      <ToastContainer />
     </>
   );
 }
