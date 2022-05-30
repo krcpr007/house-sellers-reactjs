@@ -4,10 +4,12 @@ import Profile from './pages/Profile';
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import Offers from './pages/Offers';
+import Listing from './pages/Listing'; 
 import ForgotPassword from './pages/ForgotPassword'; 
 import Explore from './pages/Explore';
 import NavBar from './components/NavBar';
 import Category from './pages/Category';
+import Contact from './pages/Contact'
 import PrivateComponent from './components/PrivateComponent';
 import { ToastContainer } from 'react-toastify';
 import CreateListings  from './pages/CreateListings';
@@ -22,11 +24,14 @@ function App() {
           <Route path='/category/:categoryName' element={<Category/>}/>
           <Route path='/profile' element={<PrivateComponent/>}>
           <Route path='/profile' element={<Profile/>}/>
+          
           </Route>
           <Route path='/sign-in' element={<SignIn/>}/>
           <Route path='/sign-up' element={<SignUp/>}/>
           <Route path='/forgot-password' element={<ForgotPassword/>}/>
           <Route path='/create-listing' element={<CreateListings/>}/>
+          <Route path='/category/:categoryName/:listingId'  element={<Listing/>} />
+          <Route path='/contact/:landlordId' element={<Contact />} />
         </Routes>
         <NavBar/>
       </Router>
