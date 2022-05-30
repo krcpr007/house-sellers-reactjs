@@ -84,9 +84,9 @@ function SignIn() {
         </div>
       </form>
       <GAuth />
-      <Link to='/sign-up' className='registerLink'>
-        Sign Up Instead
-      </Link>
+      <Link to='/sign-in' style={{color:"red"}} className='registerLink'>
+          Sign In Instead
+        </Link>
     </div>
   </>
   );
