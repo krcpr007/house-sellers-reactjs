@@ -108,8 +108,8 @@ function Listing() {
         <div className='leafletContainer'>
           <MapContainer
             style={{ height: '100%', width: '100%' }}
-            // center={[listing.geolocation.lat, listing.geolocation.long]}
-            center={ [25.7848, 84.7274]}
+            center={[listing.geolocation.lat, listing.geolocation.long]}
+            // center={ [25.7848, 84.7274]} // geoCode of MyHome city, xD
             zoom={13}
             scrollWheelZoom={false}
           >
@@ -119,7 +119,7 @@ function Listing() {
             />
 
             <Marker
-              position={[25.7848, 84.7274]}
+              position={[listing.geolocation.lat, listing.geolocation.long]}
             >
               <Popup>{listing.location}</Popup>
             </Marker>
