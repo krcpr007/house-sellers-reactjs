@@ -24,14 +24,14 @@ function Listing() {
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
         setListing(docSnap.data());
-        console.log(docSnap.data());
+        // console.log(docSnap.data());
         // console.log(docSnap.data().geolocation)
         setLoading(false);
       }
     };
     fetchListing();
   }, [navigate, params.listingId]);
-  console.log(listing.geolocation)
+  // console.log(listing.geolocation)
   if (loading) {
     return <Spinner />;
   }
