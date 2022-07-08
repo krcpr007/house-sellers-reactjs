@@ -91,14 +91,15 @@ function CreateListing() {
     let location
 
     if (geolocationEnabled) {
+      console.log(address); 
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyAlMIZVxVWfFuAy-gN5q_KSCmwg3HDAHO0`
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyDIWezSgUqcqmNj6DqyFFauyG1jRZd5_zA`
       )
 
       const data = await response.json()
-
+      console.log(data); 
       geolocation.lat = data.results[0]?.geometry.location.lat ?? 0
-      geolocation.lng = data.results[0]?.geometry.location.lng ?? 0
+      geolocation.long = data.results[0]?.geometry.location.long ?? 0
 
       location =
         data.status === 'ZERO_RESULTS'
@@ -112,7 +113,7 @@ function CreateListing() {
       }
     } else {
       geolocation.lat = latitude
-      geolocation.lng = longitude
+      geolocation.long = longitude
     }
 
     // Store image in firebase
