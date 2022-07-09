@@ -9,11 +9,11 @@ Tech stack we have used in this:-
 
 ## Images
 
-![Landing ](/public/landing.jpg)
+![Landing ](public/landing.jpg)
 
-![offers page](/public/offers_page.jpg)
+![offers page](public/offers_page.jpg)
 
-![profile page](/public/profile_page.jpg)
+![profile page](public/profile_page.jpg)
 
 
  ## `Bug`
