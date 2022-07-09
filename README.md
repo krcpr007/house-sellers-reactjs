@@ -1,3 +1,26 @@
+# House Selling or Rent Service 
+### Its a React Web app where anyone can list their house for rent or sell also they can list it with offers. user can view the house details like how many bathrooms or how many rooms are their. authenticated with firebase and for displaying address i used leaflet map library. 
+
+Tech stack we have used in this:- 
+ 1. ReactJS
+ 1. Firebase
+ 2. Leaflet
+ 2. React-Toastify
+
+## Images
+
+![Landing ](/public/landing.jpg)
+
+![offers page](/public/offers_page.jpg)
+
+![profile page](/public/profile_page.jpg)
+
+
+ ## `Bug`
+ At creating listing we have to give address of house and then from house address we have to get geolocation code. for this we have to activate geo location api which given by google and its paid so didn't subscribe that so listing can not be created.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
